@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- officical_namespace -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+		targetNamespace="http://www.htp.by/library_schema" 
+		xmlns:library="http://www.htp.by/library_schema" 
+		elementFormDefault="qualified">
+		
+		<xs:element name="library" type="library:library_type"/>
+		
+		<xs:complexType name="library_type">
+			<xs:sequence>
+				<xs:element name="books" type="library:books_type"/>
+				<xs:element name="employees" type="library:employees_type"/>
+			</xs:sequence>
+			<xs:attribute name="start-date" type="xs:date"></xs:attribute>
+		</xs:complexType>
+		
+		<xs:complexType name="books_type" >
+				<xs:sequence>
+					<xs:element name="book" type="library:one_book_type" maxOccurs="unbounded"></xs:element>
+				</xs:sequence>
+		</xs:complexType>
+		
+		<xs:complexType name="employees_type" >
+				<xs:sequence>
+            <xs:element name="employee" type="library:one_employee_type" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>
+		</xs:complexType>
+		
+		<xs:complexType name="one_book_type" >
+			<xs:sequence>
+				<xs:element name="id" type="xs:int"></xs:element>
+				<xs:element name="title" type="xs:string"></xs:element>
+				<xs:element name="author" type="xs:string"></xs:element>
+				<xs:element name="publishedYear" type="xs:int"></xs:element>
+			</xs:sequence>
+		</xs:complexType>		
+		
+		<xs:complexType name="one_employee_type" >
+			<xs:sequence>
+				<xs:element name="id" type="xs:int"></xs:element>
+				<xs:element name="name" type="xs:string"></xs:element>
+				<xs:element name="surname" type="xs:string"></xs:element>
+				<xs:element name="birthday" type="xs:date"></xs:element>
+				<xs:element name="email" type="xs:string"></xs:element>
+				<xs:element name="readBookId" type="xs:int" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>		
+		
+</xs:schema>

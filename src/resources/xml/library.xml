@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library start-date="2018-02-10"
+xmlns="http://www.htp.by/library_schema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.htp.by/library_schema library_schema.xsd">
+
+	<books>
+		<book>
+			<id>1</id>
+			<title>War and peace</title>
+			<author>Tolstoy</author>
+			<publishedYear>1843</publishedYear>
+		</book>
+		
+		<book>
+			<id>2</id>
+			<title>Anna Karenina</title>
+			<author>Tolstoy</author>
+			<publishedYear>1875</publishedYear>
+		</book>
+		
+		<book>
+			<id>3</id>
+			<title>MuMy</title>
+			<author>Turgenev</author>
+			<publishedYear>1798</publishedYear>
+		</book>
+		<book>
+			<id>4</id>
+			<title>Master an margaret</title>
+			<author>Bulgakov</author>
+			<publishedYear>1927</publishedYear>
+		</book>
+		
+		<book>
+			<id>5</id>
+			<title>Evgeniy Onegin</title>
+			<author>Pushkin</author>
+			<publishedYear>1806</publishedYear>
+		</book>
+		
+	</books>
+	
+	<employees>
+		<employee>
+			<id>1</id>
+			<name>Dima</name>
+			<surname>Shabunevich</surname>
+			<birthday>1993-05-18</birthday>
+			<email>shab@gmail.com</email>
+			<readBookId>1</readBookId>
+			<readBookId>2</readBookId>
+			<readBookId>4</readBookId>
+		</employee>
+		
+		<employee>
+			<id>2</id>
+			<name>Anna</name>
+			<surname>Petrova</surname>
+			<birthday>1992-11-03</birthday>
+			<email>annaP@gmail.com</email>
+			<readBookId>1</readBookId>
+			<readBookId>3</readBookId>
+		</employee>
+		
+		<employee>
+			<id>3</id>
+			<name>Irina</name>
+			<surname>Stepanova</surname>
+			<birthday>1995-06-22</birthday>
+			<email>Stepanova@gmail.com</email>
+			<readBookId>1</readBookId>
+			<readBookId>2</readBookId>
+			<readBookId>3</readBookId>
+			<readBookId>4</readBookId>
+			<readBookId>5</readBookId>
+		</employee>
+		
+		<employee>
+			<id>4</id>
+			<name>Misha</name>
+			<surname>Ergulovich</surname>
+			<birthday>1992-03-05</birthday>
+			<email>v@gmail.com</email>
+			<readBookId>5</readBookId>
+		</employee>
+	</employees>
+
+</library>
